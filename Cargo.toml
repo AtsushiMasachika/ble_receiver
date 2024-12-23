@@ -1,0 +1,12 @@
+[package]
+name = "ble_receiver"
+version = "0.1.0"
+edition = "2021"
+author = "Atsushi Masachika"
+
+# Dependencies used in this project
+[dependencies]
+bluer = { version = "0.17.3", features = ["bluetoothd"] } # Bluetooth library for Rust
+futures = "0.3.31"  # Asynchronous programming utilities
+anyhow = "1.0.95"   # Error handling library
+tokio = { version = "1.42.0", features = ["full"] }  # Tokio runtime for asynchronous tasks
